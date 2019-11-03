@@ -335,6 +335,15 @@ section.examples h2 {
   margin-top: 0;
 }
 
+section.examples .otras-invitaciones h4 {
+  margin-top: 60px;
+}
+
+section.examples .otras-invitaciones .badges a {
+  background: #222222;
+  margin-bottom: 15px;
+}
+
 section.examples .badges {
   padding: 20px 0;
 }

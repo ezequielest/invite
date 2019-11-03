@@ -6,6 +6,19 @@ section.examples {
         font-size: 50px;
         margin-top: 0;
     }
+
+    .otras-invitaciones {
+        h4 {
+            margin-top: 60px;
+        }
+        .badges {
+            a {
+                background: $gray-darker;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
     .badges {
         padding: 20px 0;
         a {
