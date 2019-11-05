@@ -24,6 +24,10 @@ a:hover, a:focus {
   color: #fcbd20;
 }
 
+a.btn-fix-width {
+  width: 280px;
+}
+
 hr {
   max-width: 100px;
   margin: 25px auto 0;
@@ -351,6 +355,7 @@ section.examples .badges {
 section.examples .badges a {
   color: #eeeeee;
   background: #7b4397;
+  margin-bottom: 15px;
 }
 
 section.examples .badges a:hover {

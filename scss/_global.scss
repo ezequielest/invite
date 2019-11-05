@@ -16,6 +16,10 @@ a {
     &:focus {
         color: darken($theme-primary, 10%);
     }
+
+    &.btn-fix-width {
+        width: 280px;
+    }
 }
 
 hr {
