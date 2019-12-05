@@ -1,0 +1,109 @@
+section.recomended-services {
+
+
+    .fotos-blur {
+        .col-4 {
+            justify-content: center;
+            display: flex;
+        }
+
+        img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            @media (max-width: 500px) {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+
+    .title {
+        margin-top: 60px;
+    }
+
+    .services {
+        margin: 40px 0 0 0;
+
+        .service {
+            margin-bottom: 50px;
+            font-size: 14px;
+            
+            img {
+                width: 80px;
+
+                @media (max-width: 500px) {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        .redes {
+            margin: 10px 0px;
+            .col {
+                padding: 0;
+            }
+        }
+
+        li {
+            a {
+                text-align: center;
+                font-size: 20px;
+                line-height: 40px;
+                display: block;
+                width: 40px;
+                height: 40px;
+                color: white;
+                border-radius: 100%;
+            }
+            &.social-twitter {
+                a {
+                    background-color: $brand-twitter;
+                    &:hover {
+                        background-color: darken($brand-twitter, 10%);
+                    }
+                }
+            }
+            &.social-instagram {
+                a {
+                    background-color: $brand-instagram;
+                    &:hover {
+                        background-color: darken($brand-instagram, 10%);
+                    }
+                }
+            }
+            &.social-facebook {
+                a {
+                    background-color: $brand-facebook;
+                    &:hover {
+                        background-color: darken($brand-facebook, 10%);
+                    }
+                }
+            }
+            &.social-google-plus {
+                a {
+                    background-color: $brand-google-plus;
+                    &:hover {
+                        background-color: darken($brand-google-plus, 10%);
+                    }
+                }
+            }
+            &.web {
+                position: relative;
+                top: -2px;
+                a {
+                    text-decoration: none;
+                    font-size: 12px;
+                    background-color: rgb(185, 206, 66);
+                    &:hover {
+                        background-color: darken(rgb(185, 206, 66), 10%);
+                    }
+                }
+            }
+        }
+    }
+
+   
+}
