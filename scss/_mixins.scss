@@ -87,13 +87,13 @@
     /* Track */
     ::-webkit-scrollbar-track {
         border-radius: 0px;
-        background: $gray-base;
         border: 0;
+        background: rgb(243, 243, 243);
     }
     
     /* Handle */
     ::-webkit-scrollbar-thumb {
-        background: $theme-secondary;
+        background: rgb(199, 199, 199);
         border-radius: 0px;
         border: 0;
     }

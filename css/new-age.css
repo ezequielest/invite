@@ -282,12 +282,12 @@ header.masthead .device-container ::-webkit-scrollbar {
 
 header.masthead .device-container ::-webkit-scrollbar-track {
   border-radius: 0px;
-  background: #000;
   border: 0;
+  background: #f3f3f3;
 }
 
 header.masthead .device-container ::-webkit-scrollbar-thumb {
-  background: #7b4397;
+  background: #c7c7c7;
   border-radius: 0px;
   border: 0;
 }
@@ -422,12 +422,12 @@ section.features .device-container ::-webkit-scrollbar {
 
 section.features .device-container ::-webkit-scrollbar-track {
   border-radius: 0px;
-  background: #000;
   border: 0;
+  background: #f3f3f3;
 }
 
 section.features .device-container ::-webkit-scrollbar-thumb {
-  background: #7b4397;
+  background: #c7c7c7;
   border-radius: 0px;
   border: 0;
 }
