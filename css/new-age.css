@@ -247,6 +247,7 @@ section h2 {
 
 header.masthead {
   position: relative;
+  height: 100vh;
   width: 100%;
   padding-top: 150px;
   padding-bottom: 100px;
@@ -310,10 +311,15 @@ header.masthead .device-container .screen .img-fluid {
   max-width: 105%;
 }
 
+@media (max-width: 1392px) {
+  header.masthead .device-container {
+    width: 230px;
+  }
+}
+
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
-    min-height: 775px;
     padding-top: 0;
     padding-bottom: 0;
   }
