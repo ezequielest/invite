@@ -64,6 +64,50 @@ section h2 {
   font-size: 50px;
 }
 
+.flecha {
+  position: absolute;
+  left: 20px;
+  z-index: 2;
+  left: 250px;
+  top: 38px;
+  -webkit-animation: row-animate 1s infinite;
+  animation: row-animate 1s infinite;
+  color: #1b1b1b;
+}
+
+.flecha span {
+  position: relative;
+  bottom: 8px;
+}
+
+.flecha img {
+  width: 50px;
+}
+
+@-webkit-keyframes row-animate {
+  0% {
+    top: 40px;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 40px;
+  }
+}
+
+@keyframes row-animate {
+  0% {
+    top: 40px;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 40px;
+  }
+}
+
 .loading {
   position: absolute;
   width: 100%;
@@ -255,6 +299,7 @@ header.masthead {
   background: url("../img/bg-pattern.png"), #7b4397;
   background: url("../img/bg-pattern.png"), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
   background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
+  /*de 992 para arriba*/
 }
 
 header.masthead .header-content {
@@ -300,6 +345,7 @@ header.masthead .device-container ::-webkit-scrollbar-thumb:hover {
 
 header.masthead .device-container .screen {
   overflow-y: scroll;
+  top: 11% !important;
 }
 
 header.masthead .device-container .screen img {
@@ -308,7 +354,7 @@ header.masthead .device-container .screen img {
 }
 
 header.masthead .device-container .screen .img-fluid {
-  max-width: 105%;
+  max-width: 100%;
 }
 
 @media (max-width: 1392px) {
@@ -317,10 +363,17 @@ header.masthead .device-container .screen .img-fluid {
   }
 }
 
+@media (max-width: 992px) {
+  header.masthead {
+    height: initial;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
+
 @media (min-width: 992px) {
   header.masthead {
-    height: 100vh;
-    padding-top: 0;
+    padding-top: 20px;
     padding-bottom: 0;
   }
   header.masthead .header-content {
@@ -332,6 +385,34 @@ header.masthead .device-container .screen .img-fluid {
   }
   header.masthead .device-container {
     max-width: 325px;
+  }
+}
+
+@media (max-width: 400px) {
+  header.masthead .flecha {
+    left: 162px;
+  }
+  @-webkit-keyframes row-animate {
+    0% {
+      top: -70px;
+    }
+    50% {
+      top: -60px;
+    }
+    100% {
+      top: -70px;
+    }
+  }
+  @keyframes row-animate {
+    0% {
+      top: -70px;
+    }
+    50% {
+      top: -60px;
+    }
+    100% {
+      top: -70px;
+    }
   }
 }
 

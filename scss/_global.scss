@@ -54,3 +54,28 @@ section {
         font-size: 50px;
     }
 }
+
+.flecha {
+    position: absolute;
+    left: 20px;
+    z-index: 2;
+    left: 250px;
+    top: 38px;
+    animation: row-animate 1s infinite;
+    color: rgb(27, 27, 27);
+
+    span {
+        position: relative;
+        bottom: 8px;
+    }
+
+    img{
+        width: 50px;
+    }
+}
+
+@keyframes row-animate{
+    0%   {top: 40px;}
+    50%  {top: 20px;}
+    100%  {top: 40px;}
+}

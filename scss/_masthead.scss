@@ -26,13 +26,14 @@ header.masthead {
         @include scroll;
         .screen {
             overflow-y: scroll;
+            top: 11% !important;
 
             img {
                 border-radius: 3px;
                 border: 0;
             }
             .img-fluid {
-                max-width: 105%;
+                max-width: 100%;
             }
         }
     }
@@ -41,9 +42,14 @@ header.masthead {
             width: 230px;
         }
     }
+    @media (max-width: 992px) { 
+        height: initial;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    /*de 992 para arriba*/
     @media (min-width: 992px) {
-        height: 100vh;
-        padding-top: 0;
+        padding-top: 20px;
         padding-bottom: 0;
         .header-content {
             margin-bottom: 0;
@@ -55,6 +61,18 @@ header.masthead {
         }
         .device-container {
             max-width: 325px;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .flecha {
+            left: 162px;
+        }
+        
+        @keyframes row-animate{
+            0%   {top: -70px;}
+            50%  {top: -60px;}
+            100%   {top: -70px;}
         }
     }
 }
