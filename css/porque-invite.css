@@ -1,0 +1,74 @@
+/*!
+ * Start Bootstrap - New Age v5.0.6 (https://startbootstrap.com/template-overviews/new-age)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
+ */
+
+#porque-invite h3 {
+  margin-bottom: 50px;
+}
+
+#porque-invite .container-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 0 100px 0;
+}
+
+#porque-invite .container-data h4::after {
+  display: block;
+  height: 2px;
+  content: '';
+  background: #ff0000;
+  width: 20%;
+}
+
+#porque-invite .container-data.reverse {
+  text-align: right;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+#porque-invite .container-data.reverse .item:last-child {
+  margin-right: 20px;
+}
+
+#porque-invite .container-data.reverse h4 {
+  float: right;
+}
+
+#porque-invite .container-data.reverse h4::after {
+  float: right;
+  width: 200%;
+}
+
+#porque-invite .container-data.reverse p {
+  clear: both;
+}
+
+#porque-invite .container-data .item {
+  width: 40%;
+}
+
+#porque-invite .container-data .item:first-child {
+  width: 60%;
+}
+
+#porque-invite .container-data img {
+  float: right;
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+#porque-invite .container-data img.confirmation {
+  width: 200px;
+}

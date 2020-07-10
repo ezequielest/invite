@@ -26,6 +26,7 @@
 
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="libs/owl/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -59,6 +60,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="./porque-invite.html">Secciones</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#features">Características</a>
           </li>
@@ -118,6 +125,24 @@
             <a href="http://www.invite.com.ar/views/baby-shower/" target="_blank" class="btn btn-xl btn-fix-width js-scroll-trigger">BABY SHOWER</a>
             <a href="https://www.pamela.invite.com.ar/" target="_blank" class="btn btn-xl btn-fix-width js-scroll-trigger">QUINCE</a>
           </a>
+
+          <div class="owl-mobiles owl-theme">
+            <div class="item" data-hash="test1"><h4>1</h4></div>
+            <div class="item"><h4>2</h4></div>
+            <div class="item"><h4>3</h4></div>
+            <div class="item"><h4>4</h4></div>
+            <div class="item"><h4>5</h4></div>
+            <div class="item"><h4>6</h4></div>
+            <div class="item"><h4>7</h4></div>
+            <div class="item"><h4>8</h4></div>
+            <div class="item"><h4>9</h4></div>
+            <div class="item"><h4>10</h4></div>
+            <div class="item"><h4>11</h4></div>
+            <div class="item"><h4>12</h4></div>
+          </div>
+
+          <div data-hash="test1">test1</div>
+
           <div class="otras-invitaciones">
             <h4>También consultanos por invitaciones para</h4>
             <div class="badges">
@@ -390,6 +415,7 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="libs/owl/dist/owl.carousel.min.js"></script>
   <!-- Custom scripts for this template -->
   <script src="js/new-age.min.js"></script>
 
@@ -400,6 +426,16 @@
     setTimeout(() => {
       $('.website').fadeIn(1000);   
     }, 500);
+
+    $('.owl-mobiles').owlCarousel({
+        items:1,
+        loop:false,
+        center:true,
+        margin:10,
+        URLhashListener:true,
+        autoplayHoverPause:true,
+        startPosition: 'URLHash'
+    });
    
   })
   </script>
