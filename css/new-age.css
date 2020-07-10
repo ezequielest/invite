@@ -431,19 +431,27 @@ section.examples h2 {
 }
 
 section.examples .otras-invitaciones h4 {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
-section.examples .otras-invitaciones .badges a {
+section.examples .otras-invitaciones .badges .container-buttons a {
   background: #222222;
   margin-bottom: 15px;
+}
+
+section.examples .otras-invitaciones .badges .container-buttons a:hover {
+  color: #fdcc52;
 }
 
 section.examples .badges {
   padding: 20px 0;
 }
 
-section.examples .badges a {
+section.examples .badges .container-buttons {
+  margin-bottom: 30px;
+}
+
+section.examples .badges .container-buttons a {
   color: #eeeeee;
   background: #7b4397;
   margin-bottom: 15px;
@@ -473,6 +481,32 @@ section.examples .badges .badge-link img {
     display: inline-block;
     margin-bottom: 0;
   }
+}
+
+section.examples .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+section.examples .item .device-container {
+  width: 200px;
+}
+
+section.examples .item .device-container .screen {
+  overflow-y: scroll;
+}
+
+section.examples .item .device-container .screen .img-fluid {
+  max-width: 100%;
+}
+
+section.examples .item .device-container .btn {
+  width: 196px;
+  margin-top: 20px;
 }
 
 @media (min-width: 768px) {
@@ -1033,4 +1067,9 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 .btn-xl {
   font-size: 11px;
   padding: 15px 45px;
+}
+
+.btn-m {
+  font-size: 11px;
+  padding: 15px 20px;
 }

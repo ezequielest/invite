@@ -9,22 +9,33 @@ section.examples {
 
     .otras-invitaciones {
         h4 {
-            margin-top: 60px;
+            margin-top: 30px;
         }
         .badges {
-            a {
-                background: $gray-darker;
-                margin-bottom: 15px;
+            .container-buttons {
+                a {
+                    background: $gray-darker;
+                    margin-bottom: 15px;
+
+                    &:hover{
+                        color: $theme-primary;
+                    }
+                }
             }
+
         }
     }
 
     .badges {
         padding: 20px 0;
-        a {
-            color: $gray-lighter;
-            background: $theme-secondary;
-            margin-bottom: 15px;
+        .container-buttons {
+            margin-bottom: 30px;
+            
+            a {
+                color: $gray-lighter;
+                background: $theme-secondary;
+                margin-bottom: 15px;
+            }
         }
 
         a:hover {
@@ -48,6 +59,30 @@ section.examples {
             }
         }
     }
+
+    .item {
+        display: flex;
+        justify-content: center;
+
+        .device-container {
+            width: 200px;
+
+            .screen {
+                overflow-y: scroll;
+                .img-fluid {
+                    max-width: 100%;
+                }
+            }
+
+            .btn {
+                width: 196px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+
+
     @media(min-width: 768px) {
         h2 {
             font-size: 70px;

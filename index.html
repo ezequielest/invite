@@ -121,36 +121,70 @@
           <h2 class="section-heading">Conocé una nueva forma de crear tu invitación</h2>
           <p>Tu invitación online, las 24hs, fácil y rápido. Mirá estos ejemplos.</p>
           <div class="badges">
-            <a href="http://www.bodaireneymatias.invite.com.ar/" target="_blank" class="btn btn-xl btn-fix-width js-scroll-trigger">BODAS</a>
-            <a href="http://www.invite.com.ar/views/baby-shower/" target="_blank" class="btn btn-xl btn-fix-width js-scroll-trigger">BABY SHOWER</a>
-            <a href="https://www.pamela.invite.com.ar/" target="_blank" class="btn btn-xl btn-fix-width js-scroll-trigger">QUINCE</a>
-          </a>
+            <div class="container-buttons">
+              <a href="#boda" class="btn btn-xl btn-fix-width js-scroll-trigger">BODAS</a>
+              <a href="#quince" class="btn btn-xl btn-fix-width js-scroll-trigger">QUINCE</a>
+              <a href="#baby" class="btn btn-xl btn-fix-width js-scroll-trigger">BABY SHOWER</a>
+            </div>
 
-          <div class="owl-mobiles owl-theme">
-            <div class="item" data-hash="test1"><h4>1</h4></div>
-            <div class="item"><h4>2</h4></div>
-            <div class="item"><h4>3</h4></div>
-            <div class="item"><h4>4</h4></div>
-            <div class="item"><h4>5</h4></div>
-            <div class="item"><h4>6</h4></div>
-            <div class="item"><h4>7</h4></div>
-            <div class="item"><h4>8</h4></div>
-            <div class="item"><h4>9</h4></div>
-            <div class="item"><h4>10</h4></div>
-            <div class="item"><h4>11</h4></div>
-            <div class="item"><h4>12</h4></div>
+          <!--DEVICES LINKS-->
+          <div class="owl-carousel owl-theme">
+            <div class="item" data-hash="boda">
+              <div class="device-container">
+                <div class="device-mockup iphone6_plus portrait white">
+                  <div class="device">
+                    <div class="screen">
+                      <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                      <img src="img/invitaciones/mobile/header.jpg" class="img-fluid" alt="Invitacion Online">
+                    </div>
+                    <div class="button">
+                      <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                    </div>
+                  </div>
+                </div>
+                <a href="http://www.bodaireneymatias.invite.com.ar/" target="_blank" class="btn btn-m js-scroll-trigger">VER ONLINE</a>
+              </div>
+            </div>
+            <div class="item" data-hash="quince">
+              <div class="device-container">
+                <div class="device-mockup iphone6_plus portrait white">
+                  <div class="device">
+                    <div class="screen">
+                      <img src="img/invitaciones/mobile/babyshower2.png" class="img-fluid" alt="Invitacion Online">
+                    </div>
+                    <div class="button">
+                    </div>
+                  </div>
+                </div>
+                <a href="https://www.pamela.invite.com.ar/" target="_blank" class="btn btn-m js-scroll-trigger">VER ONLINE</a>
+              </div>
+            </div>
+            <div class="item" data-hash="baby">
+              <div class="device-container">
+                <div class="device-mockup iphone6_plus portrait white">
+                  <div class="device">
+                    <div class="screen">
+                      <img src="img/invitaciones/mobile/babyshower2.png" class="img-fluid" alt="Invitacion Online">
+                    </div>
+                    <div class="button">
+                    </div>
+                  </div>
+                </div>
+                <a href="http://www.invite.com.ar/views/baby-shower/" target="_blank" class="btn btn-m js-scroll-trigger">VER ONLINE</a>
+              </div>
+            </div>
           </div>
-
-          <div data-hash="test1">test1</div>
 
           <div class="otras-invitaciones">
             <h4>También consultanos por invitaciones para</h4>
             <div class="badges">
-              <a href="#contact" target="_blank" class="btn btn-xl btn-fix-width js-scroll-trigger">CUMPLEAÑOS</a>
-              <a href="#contact" target="_blank" class="btn btn-xl btn-fix-width js-scroll-trigger">EVENTOS EMPRESARIALES</a>
-              <a href="#contact" target="_blank" class="btn btn-xl btn-fix-width js-scroll-trigger">RECITALES</a> 
-              <a href="#contact" target="_blank" class="btn btn-xl btn-fix-width js-scroll-trigger">BAUTISMOS</a> 
-              <a href="#contact" target="_blank" class="btn btn-xl btn-fix-width js-scroll-trigger">COMUNIONES</a> 
+              <div class="container-buttons">
+                <a href="#contact" target="_blank" class="btn btn-xl btn-fix-width js-scroll-trigger">CUMPLEAÑOS</a>
+                <a href="#contact" target="_blank" class="btn btn-xl btn-fix-width js-scroll-trigger">EVENTOS EMPRESARIALES</a>
+                <a href="#contact" target="_blank" class="btn btn-xl btn-fix-width js-scroll-trigger">RECITALES</a> 
+                <a href="#contact" target="_blank" class="btn btn-xl btn-fix-width js-scroll-trigger">BAUTISMOS</a> 
+                <a href="#contact" target="_blank" class="btn btn-xl btn-fix-width js-scroll-trigger">COMUNIONES</a> 
+              </div>
             </div>
           </div>
         </div>
@@ -427,14 +461,14 @@
       $('.website').fadeIn(1000);   
     }, 500);
 
-    $('.owl-mobiles').owlCarousel({
+    $('.owl-carousel').owlCarousel({
         items:1,
         loop:false,
         center:true,
         margin:10,
         URLhashListener:true,
         autoplayHoverPause:true,
-        startPosition: 'URLHash'
+        startPosition: 'boda'
     });
    
   })
