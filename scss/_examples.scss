@@ -7,27 +7,9 @@ section.examples {
         margin-top: 0;
     }
 
-    .otras-invitaciones {
-        h4 {
-            margin-top: 30px;
-        }
-        .badges {
-            .container-buttons {
-                a {
-                    background: $gray-darker;
-                    margin-bottom: 15px;
-
-                    &:hover{
-                        color: $theme-primary;
-                    }
-                }
-            }
-
-        }
-    }
-
     .badges {
         padding: 20px 0;
+        margin-top: 50px;
         .container-buttons {
             margin-bottom: 30px;
             
@@ -35,6 +17,7 @@ section.examples {
                 color: $gray-lighter;
                 background: $theme-secondary;
                 margin-bottom: 15px;
+                width: 100%;
             }
         }
 
@@ -77,6 +60,62 @@ section.examples {
             .btn {
                 width: 196px;
                 margin-top: 20px;
+            }
+        }
+    }
+
+    .otras-invitaciones {
+
+        h4 {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        .owl-others {
+            //height: 350px;
+
+            .owl-item {
+                height: 180px;
+            }
+
+            .owl-prev, .owl-next {
+                background: $theme-secondary !important;
+                color: white;
+                padding: 10px 20px !important;
+                margin-left: 5px;
+            }
+
+            .item {
+                //min-height: 300px;
+                .card {
+                    -webkit-box-shadow: 2px 3px 9px 1px rgba(73, 73, 73, 0.75);
+                    -moz-box-shadow: 2px 3px 9px 1px rgba(75, 75, 75, 0.75);
+                    box-shadow: 2px 3px 9px 1px rgba(65, 65, 65, 0.75);
+                    border: 0;
+                    color: white;
+
+                    .img-header {
+                        height: 150px;
+                        background-size: cover !important;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &.recitales {
+                            background:linear-gradient(rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('./../img/otras-invitaciones/recitales.jpg');
+                        }
+                        &.eventos {
+                            background:linear-gradient(rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('./../img/otras-invitaciones/eventos.jpg');
+                        }
+                        &.cumples {
+                            background:linear-gradient(rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('./../img/otras-invitaciones/cumples.jpg');
+                        }
+                        &.comuniones {
+                            background:linear-gradient(rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('./../img/otras-invitaciones/comuniones.jpg');
+                        }
+                    }
+                }
+                
             }
         }
     }

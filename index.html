@@ -117,18 +117,27 @@
   <section class="examples bg-primary text-center" id="examples">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 mx-auto">
+        <div class="col-md-12 mx-auto">
           <h2 class="section-heading">Conocé una nueva forma de crear tu invitación</h2>
           <p>Tu invitación online, las 24hs, fácil y rápido. Mirá estos ejemplos.</p>
+
           <div class="badges">
-            <div class="container-buttons">
-              <a href="#boda" class="btn btn-xl btn-fix-width js-scroll-trigger">BODAS</a>
-              <a href="#quince" class="btn btn-xl btn-fix-width js-scroll-trigger">QUINCE</a>
-              <a href="#baby" class="btn btn-xl btn-fix-width js-scroll-trigger">BABY SHOWER</a>
+            <div class="row container-buttons">
+              <div class="col-12 col-lg-4">
+                <a href="#boda" class="btn js-scroll-trigger">BODAS</a>
+              </div>
+              <div class="col-12 col-lg-4">
+                <a href="#quince" class="btn js-scroll-trigger">QUINCE</a>
+              </div>
+              <div class="col-12 col-lg-4">
+                <a href="#baby" class="btn js-scroll-trigger">BABY SHOWER</a>
+              </div>
             </div>
+          </div>
+  
 
           <!--DEVICES LINKS-->
-          <div class="owl-carousel owl-theme">
+          <div class="owl-mobile owl-carousel">
             <div class="item" data-hash="boda">
               <div class="device-container">
                 <div class="device-mockup iphone6_plus portrait white">
@@ -173,21 +182,44 @@
                 <a href="http://www.invite.com.ar/views/baby-shower/" target="_blank" class="btn btn-m js-scroll-trigger">VER ONLINE</a>
               </div>
             </div>
-          </div>
+          </div><!--owl-->
 
           <div class="otras-invitaciones">
             <h4>También consultanos por invitaciones para</h4>
-            <div class="badges">
-              <div class="container-buttons">
-                <a href="#contact" target="_blank" class="btn btn-xl btn-fix-width js-scroll-trigger">CUMPLEAÑOS</a>
-                <a href="#contact" target="_blank" class="btn btn-xl btn-fix-width js-scroll-trigger">EVENTOS EMPRESARIALES</a>
-                <a href="#contact" target="_blank" class="btn btn-xl btn-fix-width js-scroll-trigger">RECITALES</a> 
-                <a href="#contact" target="_blank" class="btn btn-xl btn-fix-width js-scroll-trigger">BAUTISMOS</a> 
-                <a href="#contact" target="_blank" class="btn btn-xl btn-fix-width js-scroll-trigger">COMUNIONES</a> 
+            <div class="owl-others owl-carousel">
+              <div class="item">
+                <div class="card" style="width: 18rem;">
+                  <div class="img-header recitales">
+                    <h5 class="card-title">RECITALES</h5>
+                  </div>
+                </div>
               </div>
-            </div>
+
+              <div class="item">                
+                <div class="card" style="width: 18rem;">
+                  <div class="img-header eventos">
+                    <h5 class="card-title">EVENTOS EMPRESARIALES</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card" style="width: 18rem;">
+                  <div class="img-header cumples">
+                    <h5 class="card-title">CUMPLEAÑOS</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card" style="width: 18rem;">
+                  <div class="img-header comuniones">
+                    <h5 class="card-title">COMUNIONES</h5>
+                  </div>
+                </div>
+              </div>
           </div>
-        </div>
+          </div><!--otras invitaciones-->
+
+        </div><!--col-12-->
       </div>
     </div>
   </section>
@@ -461,15 +493,41 @@
       $('.website').fadeIn(1000);   
     }, 500);
 
-    $('.owl-carousel').owlCarousel({
+    $('.owl-mobile').owlCarousel({
         items:1,
         loop:false,
-        center:true,
         margin:10,
         URLhashListener:true,
         autoplayHoverPause:true,
-        startPosition: 'boda'
+        startPosition: '#quince',
+        responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          }
+      }
     });
+
+    $('.owl-others').owlCarousel({
+      loop:true,
+      autoplay: false,
+      items:3,
+      margin:10,
+      nav:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:3
+          }
+      }
+    })
    
   })
   </script>

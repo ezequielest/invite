@@ -430,21 +430,9 @@ section.examples h2 {
   margin-top: 0;
 }
 
-section.examples .otras-invitaciones h4 {
-  margin-top: 30px;
-}
-
-section.examples .otras-invitaciones .badges .container-buttons a {
-  background: #222222;
-  margin-bottom: 15px;
-}
-
-section.examples .otras-invitaciones .badges .container-buttons a:hover {
-  color: #fdcc52;
-}
-
 section.examples .badges {
   padding: 20px 0;
+  margin-top: 50px;
 }
 
 section.examples .badges .container-buttons {
@@ -455,6 +443,7 @@ section.examples .badges .container-buttons a {
   color: #eeeeee;
   background: #7b4397;
   margin-bottom: 15px;
+  width: 100%;
 }
 
 section.examples .badges a:hover {
@@ -507,6 +496,63 @@ section.examples .item .device-container .screen .img-fluid {
 section.examples .item .device-container .btn {
   width: 196px;
   margin-top: 20px;
+}
+
+section.examples .otras-invitaciones h4 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+section.examples .otras-invitaciones .owl-others .owl-item {
+  height: 180px;
+}
+
+section.examples .otras-invitaciones .owl-others .owl-prev, section.examples .otras-invitaciones .owl-others .owl-next {
+  background: #7b4397 !important;
+  color: white;
+  padding: 10px 20px !important;
+  margin-left: 5px;
+}
+
+section.examples .otras-invitaciones .owl-others .item .card {
+  -webkit-box-shadow: 2px 3px 9px 1px rgba(73, 73, 73, 0.75);
+  box-shadow: 2px 3px 9px 1px rgba(65, 65, 65, 0.75);
+  border: 0;
+  color: white;
+}
+
+section.examples .otras-invitaciones .owl-others .item .card .img-header {
+  height: 150px;
+  background-size: cover !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+section.examples .otras-invitaciones .owl-others .item .card .img-header.recitales {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 150, 0.3)), to(rgba(255, 0, 150, 0.3))), url("./../img/otras-invitaciones/recitales.jpg");
+  background: linear-gradient(rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url("./../img/otras-invitaciones/recitales.jpg");
+}
+
+section.examples .otras-invitaciones .owl-others .item .card .img-header.eventos {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 150, 0.3)), to(rgba(255, 0, 150, 0.3))), url("./../img/otras-invitaciones/eventos.jpg");
+  background: linear-gradient(rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url("./../img/otras-invitaciones/eventos.jpg");
+}
+
+section.examples .otras-invitaciones .owl-others .item .card .img-header.cumples {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 150, 0.3)), to(rgba(255, 0, 150, 0.3))), url("./../img/otras-invitaciones/cumples.jpg");
+  background: linear-gradient(rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url("./../img/otras-invitaciones/cumples.jpg");
+}
+
+section.examples .otras-invitaciones .owl-others .item .card .img-header.comuniones {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 150, 0.3)), to(rgba(255, 0, 150, 0.3))), url("./../img/otras-invitaciones/comuniones.jpg");
+  background: linear-gradient(rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url("./../img/otras-invitaciones/comuniones.jpg");
 }
 
 @media (min-width: 768px) {
