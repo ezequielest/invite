@@ -1024,7 +1024,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   margin-right: 20px;
 }
 
-#features .container-data.reverse img {
+#features .container-data.reverse .border-img {
   float: left;
 }
 
@@ -1059,6 +1059,10 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   border: 1px solid #d4d4d4;
   padding: 10px;
   display: inline-block;
+}
+
+#features .container-data .border-img {
+  float: right;
 }
 
 #features .container-data img {
