@@ -4,6 +4,65 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-new-age/blob/master/LICENSE)
  */
 
+#seccionesHome h2 {
+  margin-bottom: 80px;
+}
+
+#seccionesHome .owl-nav {
+  display: none;
+}
+
+#seccionesHome .container-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#seccionesHome .container-data h4::after {
+  display: block;
+  height: 3px;
+  content: '';
+  background: rgba(58, 231, 194, 0.8);
+  width: 20%;
+  margin-top: 20px;
+}
+
+#seccionesHome .container-data .flex-item {
+  width: 40%;
+}
+
+#seccionesHome .container-data .flex-item img.album {
+  width: 350px;
+}
+
+#seccionesHome .container-data .flex-item .border-img {
+  border: 1px solid #d4d4d4;
+  padding: 10px;
+  display: inline-block;
+  float: right;
+}
+
+#seccionesHome .container-data .flex-item .border-img img {
+  float: right;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+#seccionesHome .container-data .flex-item .border-img img.confirmation {
+  width: 200px;
+}
+
+#seccionesHome .btn {
+  margin-top: 20px;
+}
+
 html,
 body {
   width: 100%;
@@ -1039,8 +1098,9 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 #features .container-data.reverse h4::after {
   float: right;
-  width: 200%;
+  display: block;
   margin-top: 20px;
+  width: 80%;
 }
 
 #features .container-data.reverse p {
@@ -1173,4 +1233,20 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 .btn-m {
   font-size: 11px;
   padding: 15px 20px;
+}
+
+.btn-primary {
+  background-color: #fdcc52;
+  border: 0;
+}
+
+.btn-secondary {
+  background-color: #7b4397;
+  border: 0;
+}
+
+.btn-three {
+  background-color: rgba(58, 231, 194, 0.8);
+  border: 0;
+  color: white;
 }

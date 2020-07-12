@@ -64,13 +64,13 @@
             <a class="nav-link js-scroll-trigger" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="./porque-invite.html">Secciones</a>
+            <a class="nav-link js-scroll-trigger" href="#examples">Ejemplos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#features">Características</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#examples">Ejemplos</a>
+            <a class="nav-link js-scroll-trigger" href="./porque-invite.html">Secciones</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
@@ -319,6 +319,118 @@
     </div>
   </section>
 
+  <section class="contact" id="seccionesHome">
+    <div class="container">
+      <h2>Algunas de nuestras secciones</h2>
+      <div class="owl-carousel owl-theme owl-sections">
+        <div class="item">
+          <div class="container-data">
+            <div class="flex-item">
+                <h4>Slider</h4>
+                <p>Una lista de imagenes que pasan automaticamente y le dan mucho dinamismo a la invitación</p>
+            </div>
+            <div class="flex-item">
+                <div class="border-img">
+                    <img src="./img/porque-invite/slider.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="item">
+          <div class="container-data">
+            <div class="flex-item">
+                <h4>Contador</h4>
+                <p>Tene un contador en tiempo real de lo que falta para que llegue ese momento tan esperado ♥</p>
+            </div>
+            <div class="flex-item">
+                <img src="./img/porque-invite/contador.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container-data reverse">
+            <div class="flex-item">
+                <h4>Bio</h4>
+                <p>Una descripción de los protagonistas del evento o un lindo mensaje para los invitados!</p>
+            </div>
+            <div class="flex-item">
+                <img src="./img/porque-invite/bio.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container-data">
+            <div class="flex-item">
+                <h4>Geo localización</h4>
+                <p>Un mapa interativo con la ubicación real del evento.</p>
+            </div>
+            <div class="flex-item">
+                <img src="./img/porque-invite/mapa.jpg" alt="">
+            </div>
+        </div>
+        </div>
+        <div class="item">
+          <div class="container-data reverse">
+            <div class="flex-item">
+                <h4>Información</h4>
+                <p>Mantene la Información actualizada sin temor a repentinos cambios. Si algo sucede nos avisas y nosotros realizamos los cambios en el momento.</p>
+            </div>
+            <div class="flex-item">
+               <img src="./img/porque-invite/info.jpg" alt="">
+            </div>
+        </div>
+
+        </div>
+        <div class="item">
+          <div class="container-data">
+            <div class="flex-item">
+                <h4>Notas Importantes</h4>
+                <p>Que tus invitados no se olviden de nada!</p>
+            </div>
+            <div class="flex-item">
+                <img src="./img/porque-invite/importante.jpg" alt="">
+            </div>
+        </div>
+        </div>
+        <div class="item">
+          <div class="container-data reverse">
+            <div class="flex-item">
+                <h4>Video</h4>
+                <p>Si tenés algún video que queres que todos tus invitados vean, esta sección es perfecta para vos!</p>
+            </div>
+            <div class="flex-item">
+                <div class="border-img"><img src="./img/porque-invite/video.jpg" alt=""></div>
+            </div>
+        </div>
+        </div>
+        <div class="item">
+          <div class="container-data">
+            <div class="flex-item">
+                <h4>Lista Regalos</h4>
+                <p>Una lista de regalos para que tus invitados sepan lo que necesitas.</p>
+            </div>
+            <div class="flex-item">
+                <img src="./img/porque-invite/regalos.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container-data reverse">
+            <div class="flex-item">
+                <h4>Album</h4>
+                <p>Las mejores fotos previas al evento en un solo lugar, tu invitación.</p>
+            </div>
+            <div class="flex-item">
+                <img src="./img/porque-invite/album.png" class="album" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="./porque-invite.html" class="btn btn-three js-scroll-trigger">Conoce más</a>
+    </div>
+  </section>
+
   <!--<section class="" id="vip">
     <div class="container">
       <h2>INVITE VIP <span class="badge badge-secondary">Próximamente</span></h2>
@@ -466,7 +578,7 @@
 
   <footer>
     <div class="container">
-      <p>&copy; Invite 2019. All Rights Reserved.</p>
+      <p>&copy; Invite 2019-<span id="currentYear"></span>. All Rights Reserved.</p>
       <ul class="list-inline">
         <li class="list-inline-item">
           <a href="https://www.facebook.com/invitacionparaeventos/" target="_blank">
@@ -495,6 +607,7 @@
   <script src="libs/owl/dist/owl.carousel.min.js"></script>
   <!-- Custom scripts for this template -->
   <script src="js/new-age.min.js"></script>
+  <script src="js/global.js"></script>
 
   <script>
   $(document).ready(function(){
@@ -524,6 +637,7 @@
     $('.owl-others').owlCarousel({
       loop:true,
       autoplay: true,
+      autoplayTimeout: 2000,
       items:3,
       margin:10,
       nav:true,
@@ -538,6 +652,15 @@
               items:3
           }
       }
+    })
+
+    $('.owl-sections').owlCarousel({
+      loop:true,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      items:1,
+      margin:10,
+      nav:true,
     })
    
   })

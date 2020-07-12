@@ -42,3 +42,19 @@
     font-size: 11px;
     padding: 15px 20px;
 }
+
+.btn-primary {
+    background-color: $theme-primary;
+    border: 0;
+}
+
+.btn-secondary {
+    background-color: $theme-secondary;
+    border: 0;
+}
+
+.btn-three {
+    background-color: $porque-invite;
+    border: 0;
+    color: white;
+}

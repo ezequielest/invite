@@ -1,0 +1,59 @@
+
+#seccionesHome {
+    h2 {
+        margin-bottom: 80px;
+    }
+
+    .owl-nav{
+        display: none;
+    }
+
+    .container-data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h4::after {
+            display: block;
+            height: 3px;
+            content: '';
+            background: $porque-invite;
+            width: 20%;
+            margin-top: 20px;
+        }
+
+        .flex-item {
+            width: 40%;
+
+            img {  
+                &.album {
+                    width: 350px;
+                }
+            }
+
+            .border-img {
+                border: 1px solid rgb(212, 212, 212);
+                padding: 10px;
+                display: inline-block;
+                float: right;
+
+                img {
+                    float: right;
+                    width: 100%;
+                    object-fit: cover;
+            
+                    &.confirmation {
+                        width: 200px;
+                    }
+                }
+                    
+            }
+            
+        }
+
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+}

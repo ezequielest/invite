@@ -87,8 +87,9 @@
             
                 &::after {
                     float: right;
-                    width: 200%;
+                    display: block;
                     margin-top: 20px;
+                    width: 80%;
                 }
             }
 
