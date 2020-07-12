@@ -358,7 +358,7 @@ header.masthead .device-container .screen img {
 }
 
 header.masthead .device-container .screen .img-fluid {
-  max-width: 100%;
+  max-width: 105%;
 }
 
 @media (max-width: 1392px) {
@@ -481,16 +481,41 @@ section.examples .item {
   justify-content: center;
 }
 
+section.examples .item.quince img {
+  width: 105%;
+}
+
 section.examples .item .device-container {
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
   width: 200px;
+}
+
+section.examples .item .device-container ::-webkit-scrollbar {
+  width: 10px;
+  border: 0;
+}
+
+section.examples .item .device-container ::-webkit-scrollbar-track {
+  border-radius: 0px;
+  border: 0;
+  background: #f3f3f3;
+}
+
+section.examples .item .device-container ::-webkit-scrollbar-thumb {
+  background: #c7c7c7;
+  border-radius: 0px;
+  border: 0;
+}
+
+section.examples .item .device-container ::-webkit-scrollbar-thumb:hover {
+  background: #CCC;
+  border: 0;
 }
 
 section.examples .item .device-container .screen {
   overflow-y: scroll;
-}
-
-section.examples .item .device-container .screen .img-fluid {
-  max-width: 100%;
 }
 
 section.examples .item .device-container .btn {

@@ -47,14 +47,16 @@ section.examples {
         display: flex;
         justify-content: center;
 
+        &.quince img {
+            width: 105%;
+        }
+
         .device-container {
+            @include scroll;
             width: 200px;
 
             .screen {
                 overflow-y: scroll;
-                .img-fluid {
-                    max-width: 100%;
-                }
             }
 
             .btn {
