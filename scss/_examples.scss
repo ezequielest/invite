@@ -95,6 +95,7 @@ section.examples {
                     box-shadow: 2px 3px 9px 1px rgba(65, 65, 65, 0.75);
                     border: 0;
                     color: white;
+                    border-radius: 5px;
 
                     .img-header {
                         height: 150px;
@@ -102,18 +103,19 @@ section.examples {
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        border-radius: 2px;
 
                         &.recitales {
-                            background:linear-gradient(rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('./../img/otras-invitaciones/recitales.jpg');
+                            background:linear-gradient(rgba(10, 10, 10, 0.3), rgba(61, 54, 58, 0.3)), url('./../img/otras-invitaciones/recitales.jpg');
                         }
                         &.eventos {
-                            background:linear-gradient(rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('./../img/otras-invitaciones/eventos.jpg');
+                            background:linear-gradient(rgba(43, 43, 43, 0.3), rgba(70, 63, 67, 0.3)), url('./../img/otras-invitaciones/eventos.jpg');
                         }
                         &.cumples {
-                            background:linear-gradient(rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('./../img/otras-invitaciones/cumples.jpg');
+                            background:linear-gradient(rgba(34, 33, 34, 0.3), rgba(85, 80, 83, 0.3)), url('./../img/otras-invitaciones/cumples.jpg');
                         }
                         &.comuniones {
-                            background:linear-gradient(rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('./../img/otras-invitaciones/comuniones.jpg');
+                            background:linear-gradient(rgba(44, 44, 44, 0.3), rgba(73, 69, 71, 0.3)), url('./../img/otras-invitaciones/comuniones.jpg');
                         }
                     }
                 }

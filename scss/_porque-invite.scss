@@ -5,33 +5,40 @@
 
 #porque-invite {
     text-align: center;
-    margin-bottom: 150px;
+    color: white;
+    background: url('../img/bg-pattern.png'), $theme-secondary;
+    background: url('../img/bg-pattern.png'), -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
+    background: url('../img/bg-pattern.png'), linear-gradient(to left, $theme-secondary, $theme-tertiary);
     h3 {
-        margin: 80px 0 100px;
+        padding-top: 140px; 
+        padding-bottom: 30px;
     }
 
     p {
-        margin: 100px 0;
+        padding-top: 80px;
+        padding-bottom: 0px;
+    }
+
+    .arrow-down{
+        width: 80px;
+        position: relative;
+        right: 80px;
+        padding-bottom: 160px;
+        transform: rotate(88deg);
+        filter: invert(100%);
+        animation:  row-animate 1s infinite ease-in-out;
     }
 }
 
 #features {
 
     h3 {
+        margin-top: 100px;
         margin-bottom: 50px;
     }
 
     .title-sections {
         text-align: center;
-        margin-bottom: 150px;
-    }
-
-    .separation {
-        margin: 0 auto;
-        width: 50%;
-        height: 1px;
-        color:#000;
-        background-color: rgb(90, 90, 90);
         margin-bottom: 150px;
     }
 
@@ -62,6 +69,14 @@
             .item:last-child{
                 margin-right: 20px;
             }
+
+            img {
+                float: left;
+                &.recuerdo {
+                    width: 250px;
+                }
+            }
+
 
             h4 {
                 float: right;
@@ -125,9 +140,13 @@
                 text-align: center;
                 flex-direction: column;
 
-                .item:last-child{
-                    margin: 0;
+                .item {
+                    &:last-child{
+                        margin: 0;
+                    }
+                                        
                 }
+
             }
 
             .item {

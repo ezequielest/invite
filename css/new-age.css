@@ -244,6 +244,12 @@ section h2 {
   background-color: transparent;
 }
 
+#mainNav .navbar-nav > li > a.vip {
+  background-color: #fdcc52;
+  color: black;
+  border-radius: 2px;
+}
+
 #mainNav .navbar-nav > li > a,
 #mainNav .navbar-nav > li > a:focus {
   color: #222222;
@@ -544,6 +550,7 @@ section.examples .otras-invitaciones .owl-others .item .card {
   box-shadow: 2px 3px 9px 1px rgba(65, 65, 65, 0.75);
   border: 0;
   color: white;
+  border-radius: 5px;
 }
 
 section.examples .otras-invitaciones .owl-others .item .card .img-header {
@@ -558,26 +565,27 @@ section.examples .otras-invitaciones .owl-others .item .card .img-header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-radius: 2px;
 }
 
 section.examples .otras-invitaciones .owl-others .item .card .img-header.recitales {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 150, 0.3)), to(rgba(255, 0, 150, 0.3))), url("./../img/otras-invitaciones/recitales.jpg");
-  background: linear-gradient(rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url("./../img/otras-invitaciones/recitales.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 10, 10, 0.3)), to(rgba(61, 54, 58, 0.3))), url("./../img/otras-invitaciones/recitales.jpg");
+  background: linear-gradient(rgba(10, 10, 10, 0.3), rgba(61, 54, 58, 0.3)), url("./../img/otras-invitaciones/recitales.jpg");
 }
 
 section.examples .otras-invitaciones .owl-others .item .card .img-header.eventos {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 150, 0.3)), to(rgba(255, 0, 150, 0.3))), url("./../img/otras-invitaciones/eventos.jpg");
-  background: linear-gradient(rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url("./../img/otras-invitaciones/eventos.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(43, 43, 43, 0.3)), to(rgba(70, 63, 67, 0.3))), url("./../img/otras-invitaciones/eventos.jpg");
+  background: linear-gradient(rgba(43, 43, 43, 0.3), rgba(70, 63, 67, 0.3)), url("./../img/otras-invitaciones/eventos.jpg");
 }
 
 section.examples .otras-invitaciones .owl-others .item .card .img-header.cumples {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 150, 0.3)), to(rgba(255, 0, 150, 0.3))), url("./../img/otras-invitaciones/cumples.jpg");
-  background: linear-gradient(rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url("./../img/otras-invitaciones/cumples.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 33, 34, 0.3)), to(rgba(85, 80, 83, 0.3))), url("./../img/otras-invitaciones/cumples.jpg");
+  background: linear-gradient(rgba(34, 33, 34, 0.3), rgba(85, 80, 83, 0.3)), url("./../img/otras-invitaciones/cumples.jpg");
 }
 
 section.examples .otras-invitaciones .owl-others .item .card .img-header.comuniones {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 150, 0.3)), to(rgba(255, 0, 150, 0.3))), url("./../img/otras-invitaciones/comuniones.jpg");
-  background: linear-gradient(rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url("./../img/otras-invitaciones/comuniones.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(44, 44, 44, 0.3)), to(rgba(73, 69, 71, 0.3))), url("./../img/otras-invitaciones/comuniones.jpg");
+  background: linear-gradient(rgba(44, 44, 44, 0.3), rgba(73, 69, 71, 0.3)), url("./../img/otras-invitaciones/comuniones.jpg");
 }
 
 @media (min-width: 768px) {
@@ -939,32 +947,42 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 #porque-invite {
   text-align: center;
-  margin-bottom: 150px;
+  color: white;
+  background: url("../img/bg-pattern.png"), #7b4397;
+  background: url("../img/bg-pattern.png"), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
 }
 
 #porque-invite h3 {
-  margin: 80px 0 100px;
+  padding-top: 140px;
+  padding-bottom: 30px;
 }
 
 #porque-invite p {
-  margin: 100px 0;
+  padding-top: 80px;
+  padding-bottom: 0px;
+}
+
+#porque-invite .arrow-down {
+  width: 80px;
+  position: relative;
+  right: 80px;
+  padding-bottom: 160px;
+  -webkit-transform: rotate(88deg);
+  transform: rotate(88deg);
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  -webkit-animation: row-animate 1s infinite ease-in-out;
+  animation: row-animate 1s infinite ease-in-out;
 }
 
 #features h3 {
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 
 #features .title-sections {
   text-align: center;
-  margin-bottom: 150px;
-}
-
-#features .separation {
-  margin: 0 auto;
-  width: 50%;
-  height: 1px;
-  color: #000;
-  background-color: #5a5a5a;
   margin-bottom: 150px;
 }
 
@@ -1004,6 +1022,14 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 #features .container-data.reverse .item:last-child {
   margin-right: 20px;
+}
+
+#features .container-data.reverse img {
+  float: left;
+}
+
+#features .container-data.reverse img.recuerdo {
+  width: 250px;
 }
 
 #features .container-data.reverse h4 {

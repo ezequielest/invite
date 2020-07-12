@@ -29,6 +29,11 @@
                         background-color: transparent;
                     }
                 }
+                &.vip {
+                    background-color: $theme-primary;
+                    color: black;
+                    border-radius: 2px;
+                }
             }
             > a,
             > a:focus {
