@@ -34,8 +34,7 @@ if ( !isset($_POST['name']) ||
 
         //Recipients
         $mail->setFrom('ezequie.estigarribia@gmail.com', 'Invite');
-        $mail->addAddress('invite@blur.com.ar', 'Invite');     // Add a recipient
-        $mail->addAddress('info@blur.com.ar', 'Blur');     // Add a recipient
+        $mail->addAddress('info@invite.com.ar', 'Invite');     // Add a recipient
 
         //Attachments
         if (isset($_FILES['attachFile'])) {

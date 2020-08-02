@@ -152,7 +152,7 @@ section h2 {
   position: absolute;
   left: 20px;
   z-index: 2;
-  left: 250px;
+  left: 350px;
   top: 38px;
   -webkit-animation: row-animate 1s infinite;
   animation: row-animate 1s infinite;
@@ -454,6 +454,9 @@ header.masthead .device-container .screen .img-fluid {
 @media (max-width: 1392px) {
   header.masthead .device-container {
     width: 230px;
+  }
+  header.masthead .flecha {
+    left: 250px;
   }
 }
 
