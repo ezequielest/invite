@@ -164,6 +164,25 @@
                 &:first-child{
                     width: 70%;
                 }
+                
+                .border-img{
+
+                    &.confirmation{
+                        width: 150px;
+                        margin-right: 75px;
+                    }
+    
+                    &.recuerdo {
+                        width: 150px;
+                        margin-left: 60px;
+                    }
+
+                    img {
+                        float: right;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
     
                     
                 h4 {
@@ -176,17 +195,6 @@
                         margin-top: 20px;
                     }
                 }
-            }
-
-            img {
-                float: right;
-                width: 100%;
-                object-fit: contain;
-    
-                &.confirmation {
-                    width: 100%;
-                }
-                
             }
         }
     }

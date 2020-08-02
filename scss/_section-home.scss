@@ -56,4 +56,31 @@
     .btn {
         margin-top: 20px;
     }
+
+    @media (max-width:550px) {
+        padding: 100px 0 60px 0;
+
+        .container-data {
+            flex-direction: column;
+            
+        .flex-item {
+            margin-bottom: 50px;
+            width: 100%;
+
+            img { 
+                width: 100%;
+                
+                    &.album {
+                        width: 100%;  
+                    }
+                    
+                }
+            }
+
+            .btn {
+                font-size: 10px;
+            }
+        }
+    }
+    
 }
